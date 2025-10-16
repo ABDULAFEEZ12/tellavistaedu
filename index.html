@@ -3,206 +3,300 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>About Tellavista | Africa’s #1 AI Education Platform</title>
-  <meta name="description" content="Tellavista is Africa’s #1 AI-powered education platform helping students master digital skills, coding, and AI through interactive learning." />
-  <link rel="icon" href="tellavista logo.jpg" type="image/jpg" />
+  <title>Tellavista – Learn Smarter with AI</title>
+  <meta name="description" content="Tellavista is an AI-powered education platform built by Abdul Afeez Adewale Tella to help students learn smarter, faster, and easier with personalized learning support." />
+  <meta name="keywords" content="Tellavista, Education AI, Learning Platform, Abdul Afeez Adewale Tella, African Edtech, AI Education, Study Assistant, Personalized Learning, Student Platform">
+  <meta name="author" content="Abdul Afeez Adewale Tella">
+  <meta name="robots" content="index, follow">
+
+  <!-- ✅ Google Site Verification -->
+  <meta name="google-site-verification" content="google76268f26b118dad1" />
+
+  <!-- ✅ Open Graph -->
+  <meta property="og:title" content="Tellavista – Learn Smarter with AI">
+  <meta property="og:description" content="Tellavista helps students across Africa learn faster and smarter using AI-driven explanations, quizzes, and learning tools.">
+  <meta property="og:image" content="https://abdulafeez12.github.io/tellavista.github.io/Tellavista%20LOGO.jpg">
+  <meta property="og:url" content="https://abdulafeez12.github.io/tellavista.github.io/">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Tellavista">
+
+  <!-- ✅ Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Tellavista – Learn Smarter with AI">
+  <meta name="twitter:description" content="Tellavista is an AI-powered education platform connecting students to smart learning experiences.">
+  <meta name="twitter:image" content="https://abdulafeez12.github.io/tellavista.github.io/Tellavista%20LOGO.jpg">
+
+  <!-- ✅ JSON-LD Schema -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "name": "Tellavista",
+    "url": "https://www.tellavista.com",
+    "logo": "https://abdulafeez12.github.io/tellavista.github.io/Tellavista%20LOGO.jpg",
+    "sameAs": [
+      "https://www.linkedin.com/in/abdulafeezadetella",
+      "https://www.tiktok.com/@tellavista_ai"
+    ],
+    "founder": {
+      "@type": "Person",
+      "name": "Abdul Afeez Adewale Tella",
+      "jobTitle": "Founder",
+      "url": "https://www.linkedin.com/in/abdulafeezadetella"
+    },
+    "description": "Tellavista is an AI-powered education platform designed to make learning interactive, personalized, and accessible for every student."
+  }
+  </script>
+
+  <link rel="icon" type="image/png" href="favicon.png" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
 
   <style>
     * {
       margin: 0;
       padding: 0;
       box-sizing: border-box;
-      font-family: 'Poppins', sans-serif;
     }
 
     body {
-      background: #f8f9fb;
-      color: #222;
-      line-height: 1.6;
+      font-family: 'Poppins', sans-serif;
+      background: linear-gradient(145deg, #ecfdf5, #d1fae5);
+      color: #111827;
+      overflow-x: hidden;
+      scroll-behavior: smooth;
     }
 
     header {
-      background: white;
-      box-shadow: 0 2px 10px rgba(0,0,0,0.05);
-      padding: 15px 20px;
-      position: sticky;
-      top: 0;
-      z-index: 100;
-    }
-
-    .container {
+      background: rgba(255, 255, 255, 0.95);
+      backdrop-filter: blur(12px);
+      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+      padding: 1rem 2rem;
       display: flex;
       align-items: center;
       justify-content: space-between;
-      max-width: 1100px;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+      transition: all 0.3s ease;
+    }
+
+    header img {
+      height: 45px;
+      border-radius: 10px;
+    }
+
+    nav {
+      display: flex;
+      align-items: center;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+
+    nav a {
+      margin: 0.5rem 1rem;
+      text-decoration: none;
+      color: #111827;
+      font-weight: 500;
+      transition: color 0.3s;
+    }
+
+    nav a:hover {
+      color: #16a34a;
+    }
+
+    .hero {
+      text-align: center;
+      padding: 5rem 1.5rem;
+      max-width: 850px;
       margin: auto;
     }
 
-    .logo {
+    .hero h1 {
+      font-size: 2.8rem;
+      background: linear-gradient(90deg, #16a34a, #047857);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
       font-weight: 700;
-      font-size: 22px;
-      color: #0077ff;
+      margin-bottom: 1rem;
+      line-height: 1.2;
     }
 
-    .nav {
+    .hero p {
+      max-width: 650px;
+      margin: 0 auto 2.5rem;
+      line-height: 1.7;
+      color: #374151;
+      font-size: 1.1rem;
+    }
+
+    .button-group {
       display: flex;
-      gap: 15px;
-      align-items: center;
-    }
-
-    .nav-link {
-      text-decoration: none;
-      color: #333;
-      font-size: 15px;
-      transition: 0.3s;
-    }
-
-    .nav-link:hover {
-      color: #0077ff;
+      justify-content: center;
+      gap: 1rem;
+      flex-wrap: wrap;
     }
 
     .btn, .btn-outline {
+      padding: 0.9rem 2rem;
+      border-radius: 12px;
+      font-weight: 600;
       text-decoration: none;
-      padding: 8px 15px;
-      border-radius: 6px;
-      font-size: 14px;
-      transition: 0.3s;
+      transition: all 0.3s ease;
+      font-size: 1rem;
     }
 
     .btn {
-      background: #0077ff;
-      color: white;
+      background: #16a34a;
+      color: #fff;
+      box-shadow: 0 4px 14px rgba(22, 163, 74, 0.4);
     }
 
     .btn:hover {
-      background: #005fcc;
+      background: #15803d;
+      transform: translateY(-2px);
     }
 
     .btn-outline {
-      border: 1.5px solid #0077ff;
-      color: #0077ff;
+      border: 2px solid #16a34a;
+      color: #16a34a;
       background: transparent;
     }
 
     .btn-outline:hover {
-      background: #0077ff;
-      color: white;
+      background: #16a34a;
+      color: #fff;
+      transform: translateY(-2px);
     }
 
-    /* Hamburger menu for mobile */
-    .menu-toggle {
-      display: none;
-      flex-direction: column;
-      cursor: pointer;
-    }
-
-    .menu-toggle span {
-      background: #333;
-      height: 3px;
-      width: 25px;
-      margin: 4px 0;
-      border-radius: 2px;
-      transition: 0.3s;
-    }
-
-    @media (max-width: 768px) {
-      .nav {
-        display: none;
-        flex-direction: column;
-        background: white;
-        position: absolute;
-        top: 65px;
-        right: 20px;
-        width: 200px;
-        box-shadow: 0 2px 10px rgba(0,0,0,0.1);
-        padding: 15px;
-        border-radius: 10px;
-      }
-
-      .nav.active {
-        display: flex;
-      }
-
-      .menu-toggle {
-        display: flex;
-      }
-    }
-
-    main {
-      padding: 40px 20px;
-      max-width: 900px;
-      margin: auto;
-    }
-
-    main h1 {
-      font-size: 28px;
-      color: #0077ff;
+    section {
+      padding: 4rem 1.5rem;
       text-align: center;
-      margin-bottom: 20px;
     }
 
-    main p {
-      font-size: 16px;
-      color: #444;
-      margin-bottom: 15px;
-      text-align: justify;
+    section h1 {
+      font-size: 2rem;
+      margin-bottom: 1rem;
+      color: #065f46;
+      font-weight: 600;
+    }
+
+    section p {
+      max-width: 700px;
+      margin: 0 auto;
+      line-height: 1.8;
+      color: #374151;
+      font-size: 1rem;
     }
 
     footer {
-      background: #f0f4ff;
-      color: #333;
+      background: #065f46;
+      color: #ecfdf5;
       text-align: center;
-      padding: 20px;
-      font-size: 14px;
-      margin-top: 40px;
+      padding: 2rem 1rem;
+      font-size: 0.9rem;
+      letter-spacing: 0.3px;
+    }
+
+    footer a {
+      color: #10b981;
+      text-decoration: none;
+      margin-left: 0.5rem;
+    }
+
+    @media (max-width: 768px) {
+      header {
+        flex-direction: column;
+        gap: 0.8rem;
+        padding: 0.8rem 1rem;
+      }
+
+      header img {
+        height: 42px;
+      }
+
+      .hero {
+        padding: 4rem 1rem;
+      }
+
+      .hero h1 {
+        font-size: 2.2rem;
+      }
+
+      .hero p {
+        font-size: 1rem;
+        padding: 0 0.5rem;
+      }
+
+      .btn, .btn-outline {
+        width: 100%;
+        text-align: center;
+      }
+
+      section h1 {
+        font-size: 1.6rem;
+      }
+
+      footer {
+        font-size: 0.85rem;
+      }
+    }
+
+    @media (max-width: 400px) {
+      .hero h1 {
+        font-size: 1.9rem;
+      }
+      nav a {
+        margin: 0.3rem 0.7rem;
+      }
     }
   </style>
 </head>
+
 <body>
-
   <header>
-    <div class="container">
-      <h1 class="logo">Tellavista</h1>
-
-      <div class="menu-toggle" id="menu-toggle">
-        <span></span>
-        <span></span>
-        <span></span>
-      </div>
-
-      <nav class="nav" id="nav">
-        <a href="index.html" class="nav-link">Home</a>
-        <a href="about.html" class="nav-link">About</a>
-        <a href="contact.html" class="nav-link">Contact</a>
-        <a href="https://tellavista.onrender.com/login" class="btn">Log in</a>
-        <a href="https://tellavista.onrender.com/signup" class="btn-outline">Sign up</a>
-      </nav>
-    </div>
+    <img src="Tellavista LOGO.jpg" alt="Tellavista Logo" />
+    <nav>
+      <a href="#about">About</a>
+      <a href="#founder">Founder</a>
+      <a href="https://tellavista.com" class="btn-outline">Main Site</a>
+    </nav>
   </header>
 
-  <main>
+  <section class="hero">
+    <h1>Welcome to Tellavista</h1>
+    <p>
+      Tellavista is an AI-powered education platform designed to help students across Africa 
+      learn smarter and faster. Built by <strong>Abdul Afeez Adewale Tella</strong>, 
+      Tellavista combines the power of AI and animation to make learning engaging and personal.
+    </p>
+    <div class="button-group">
+      <a href="https://tellavista.onrender.com/login" class="btn">Log in</a>
+      <a href="https://tellavista.onrender.com/signup" class="btn-outline">Sign up</a>
+    </div>
+  </section>
+
+  <section id="about" style="background:#ffffff;">
     <h1>About Tellavista</h1>
-    <p>Tellavista is Africa’s #1 AI-powered education platform built to help students master digital skills, coding, and artificial intelligence in a simple and personalized way. We believe education should not be one-size-fits-all, so we’re using AI to create adaptive learning paths for every student — from beginner to expert.</p>
+    <p>
+      Tellavista helps students understand complex topics through personalized explanations, 
+      quizzes, and AI-powered support. Our mission is to make quality education accessible to 
+      every student in Africa through smart learning technology and motivation-driven teaching.
+    </p>
+  </section>
 
-    <p>Our mission is to make world-class education accessible to every African student, regardless of their background, device, or location. With AI tutors, interactive learning modules, and gamified lessons, Tellavista helps students learn faster, stay motivated, and achieve real career growth.</p>
-
-    <p>We’re not just building a platform. We’re building a movement — one that empowers the next generation of African innovators to create, solve, and lead using technology.</p>
-
-    <p>Tellavista is proudly founded by <strong>Abdul Afeez Adewale Tella</strong> and driven by a clear vision: to transform how Africans learn and use technology to change the world.</p>
-  </main>
+  <section id="founder">
+    <h1>About the Founder</h1>
+    <p>
+      <strong>Abdul Afeez Adewale Tella</strong> is a Nigerian mathematician, animator, and AI innovator 
+      on a mission to make education smarter, simpler, and more accessible for millions of students.
+    </p>
+    <br>
+    <a href="https://www.linkedin.com/in/abdulafeezadetella" class="btn">Connect on LinkedIn</a>
+  </section>
 
   <footer>
-    &copy; 2025 Tellavista. All rights reserved. | <a href="https://tellavista.onrender.com" style="color:#0077ff;text-decoration:none;">Visit Platform</a>
+    © 2025 Tellavista — All Rights Reserved |
+    <a href="https://tellavista.com">www.tellavista.com</a>
   </footer>
-
-  <script>
-    const toggle = document.getElementById('menu-toggle');
-    const nav = document.getElementById('nav');
-    toggle.addEventListener('click', () => {
-      nav.classList.toggle('active');
-      toggle.classList.toggle('open');
-    });
-  </script>
-
 </body>
 </html>
