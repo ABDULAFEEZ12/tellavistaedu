@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://abdulafeez12.github.io/tellavistaedu/sitemap.xml
